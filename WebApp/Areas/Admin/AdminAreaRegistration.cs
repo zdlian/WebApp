@@ -8,7 +8,7 @@ namespace WebApp.Areas.Admin
         {
             get 
             {
-                return "Admin";
+                return "Admin1";
             }
         }
 
@@ -16,7 +16,7 @@ namespace WebApp.Areas.Admin
         {
             context.MapRoute(
                 "Admin_default",
-                "Admin/{controller}/{action}/{id}",
+                "Admin1/{controller}/{action}/{id}",
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 new string[] { "WebApp.Areas.Admin.Controllers" }
             );
